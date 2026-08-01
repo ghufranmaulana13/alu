@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altura | Web3 for Games</title>
+  <meta name="description" content="Altura provides everything game developers need to integrate Web3 into your game using a simple yet powerful platform. Develop multi-chain games with Smart NFTs today." />
+
+  <!-- Google Fonts: Inter & Fragment Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span class="badge">NEW</span>
+      <span><strong>Altura Guard II is Live</strong> — Frictionless Web3 Authentication with 5-Digit Passcodes & Social Logins.</span>
+      <a href="#altura-guard" class="announcement-link">Explore Guard II &rarr;</a>
+    </div>
+  </div>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L3 26H9.5L16 13L22.5 26H29L16 2Z" fill="url(#logo_grad)" />
+            <path d="M16 18L12 26H20L16 18Z" fill="#00f0ff" />
+            <defs>
+              <linearGradient id="logo_grad" x1="3" y1="2" x2="29" y2="26" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f0ff" />
+                <stop offset="0.5" stop-color="#7000ff" />
+                <stop offset="1" stop-color="#ff007a" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">ALTURA</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="#products" class="nav-link">Products <span class="chevron">▼</span></a>
+            <div class="dropdown-menu">
+              <a href="#smart-nfts" class="dropdown-item">
+                <span class="item-icon">⚡</span>
+                <div>
+                  <strong>Smart NFTs</strong>
+                  <p>Dynamic, programmable in-game assets</p>
+                </div>
+              </a>
+              <a href="#altura-guard" class="dropdown-item">
+                <span class="item-icon">🛡️</span>
+                <div>
+                  <strong>Altura Guard II</strong>
+                  <p>Passcode & social Web3 authentication</p>
+                </div>
+              </a>
+              <a href="#marketplaces" class="dropdown-item">
+                <span class="item-icon">🏪</span>
+                <div>
+                  <strong>White-Label Marketplaces</strong>
+                  <p>Custom branded NFT web stores</p>
+                </div>
+              </a>
+              <a href="#developer-sdks" class="dropdown-item">
+                <span class="item-icon">⚙️</span>
+                <div>
+                  <strong>Multi-Chain Engine SDKs</strong>
+                  <p>Unity, Unreal, JS & REST integrations</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#developer-sdks" class="nav-link">Developers</a></li>
+          <li class="nav-item"><a href="#supported-chains" class="nav-link">Chains (17+)</a></li>
+          <li class="nav-item"><a href="#showcase" class="nav-link">Games</a></li>
+          <li class="nav-item"><a href="#token" class="nav-link">$ALU Token</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-glass btn-sm" id="btn-login">Sign In</button>
+        <a href="#cta" class="btn btn-primary btn-sm">Start Building <span class="arrow">&rarr;</span></a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-container">
+      
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>The Infrastructure for Web3 Gaming</span>
+      </div>
+
+      <h1 class="hero-title">
+        Build Multi-Chain Games with <br />
+        <span class="gradient-text">Smart NFTs & Seamless Auth</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Altura gives game developers powerful SDKs, APIs, and white-label marketplaces to integrate 
+        programmable dynamic NFTs and friction-free player onboarding across 17+ blockchains.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#cta" class="btn btn-primary btn-lg glow-btn">
+          Start Building Free <span class="arrow">&rarr;</span>
+        </a>
+        <a href="#developer-sdks" class="btn btn-glass btn-lg">
+          <span class="code-icon">&lt;/&gt;</span> Explore Developer Docs
+        </a>
+      </div>
+
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-target="17">17+</span>
+          <span class="stat-label">Blockchains Supported</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="50">50M+</span>
+          <span class="stat-label">Monthly API Calls</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="250">250+</span>
+          <span class="stat-label">Live Web3 Games</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">&lt; 100ms</span>
+          <span class="stat-label">Average API Latency</span>
+        </div>
+      </div>
+
+      <!-- HERO INTERACTIVE GLASS DASHBOARD SHOWCASE -->
+      <div class="hero-dashboard-preview">
+        <div class="glass-panel dashboard-frame">
+          <div class="panel-header">
+            <div class="window-controls">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="panel-title">
+              <span class="status-indicator"></span> Altura Developer Studio — Live Telemetry
+            </div>
+            <div class="panel-badge">SDK v3.4 Active</div>
+          </div>
+
+          <div class="dashboard-body">
+            <!-- Left Side: Interactive Smart NFT Preview -->
+            <div class="dash-column nft-live-card">
+              <div class="card-header">
+                <span class="rarity-badge legendary">LEGENDARY ITEM</span>
+                <span class="chain-tag">Polygon EVM</span>
+              </div>
+              <div class="item-visual-container">
+                <div class="item-glow"></div>
+                <img src="assets/hero_nft_sword.jpg" alt="Dragon Slayer Sword NFT" class="item-img" id="hero-nft-img" />
+              </div>
+              <div class="item-details">
+                <h3 class="item-name" id="hero-nft-title">Dragon Slayer Blade</h3>
+                <div class="item-stats-row">
+                  <div class="stat-pill">Level: <strong id="hero-nft-lvl">50</strong></div>
+                  <div class="stat-pill">ATK: <strong id="hero-nft-atk">+450</strong></div>
+                  <div class="stat-pill">Durability: <strong id="hero-nft-dur">98%</strong></div>
+                </div>
+
+                <div class="interactive-triggers">
+                  <span class="trigger-label">Simulate In-Game Event:</span>
+                  <div class="trigger-buttons">
+                    <button class="btn-chip" onclick="simulateHeroNFT('levelUp')">⚡ Level Up (+5)</button>
+                    <button class="btn-chip" onclick="simulateHeroNFT('enchant')">🔥 Flame Enchant</button>
+                    <button class="btn-chip" onclick="simulateHeroNFT('damage')">⚔️ Take Battle Damage</button>
+                    <button class="btn-chip reset" onclick="simulateHeroNFT('reset')">↺ Reset</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Real-Time Smart State JSON Payload -->
+            <div class="dash-column json-console">
+              <div class="console-header">
+                <span>ON-CHAIN STATE PAYLOAD (REST API Output)</span>
+                <span class="badge-live">LIVE SOCKET</span>
+              </div>
+              <pre class="json-code"><code id="hero-json-output">{
+  "asset_id": "altura-nft-883912",
+  "name": "Dragon Slayer Blade",
+  "smart_properties": {
+    "level": 50,
+    "attack_power": 450,
+    "durability": "98%",
+    "element": "Fire / Plasma",
+    "enchantment": "Dragon Scale Flame",
+    "last_updated": "2026-08-01T20:25:00Z"
+  },
+  "chain_id": 137,
+  "owner": "0x7F9...3A19"
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOGO MARQUEE -->
+  <section class="partners-section">
+    <div class="container">
+      <p class="marquee-title">SUPPORTING 17+ BLOCKCHAINS & TOP GAME ENGINES WORLDWIDE</p>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="partner-logo"><span>⚡ Ethereum</span></div>
+        <div class="partner-logo"><span>🟣 Polygon</span></div>
+        <div class="partner-logo"><span>🟡 BNB Chain</span></div>
+        <div class="partner-logo"><span>🔵 Arbitrum</span></div>
+        <div class="partner-logo"><span>🔴 Avalanche</span></div>
+        <div class="partner-logo"><span>🟢 Solana</span></div>
+        <div class="partner-logo"><span>🔹 Immutable</span></div>
+        <div class="partner-logo"><span>🎮 Unity Engine</span></div>
+        <div class="partner-logo"><span>💥 Unreal Engine 5</span></div>
+        <div class="partner-logo"><span>⚪ Base L2</span></div>
+        <div class="partner-logo"><span>⚡ Optimism</span></div>
+        <div class="partner-logo"><span>👻 Fantom</span></div>
+        <!-- Duplicate set for seamless looping -->
+        <div class="partner-logo"><span>⚡ Ethereum</span></div>
+        <div class="partner-logo"><span>🟣 Polygon</span></div>
+        <div class="partner-logo"><span>🟡 BNB Chain</span></div>
+        <div class="partner-logo"><span>🔵 Arbitrum</span></div>
+        <div class="partner-logo"><span>🔴 Avalanche</span></div>
+        <div class="partner-logo"><span>🟢 Solana</span></div>
+        <div class="partner-logo"><span>🔹 Immutable</span></div>
+        <div class="partner-logo"><span>🎮 Unity Engine</span></div>
+        <div class="partner-logo"><span>💥 Unreal Engine 5</span></div>
+        <div class="partner-logo"><span>⚪ Base L2</span></div>
+        <div class="partner-logo"><span>⚡ Optimism</span></div>
+        <div class="partner-logo"><span>👻 Fantom</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 1: SMART NFTS -->
+  <section class="feature-section" id="smart-nfts">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">FLAGSHIP INNOVATION</span>
+        <h2 class="section-title">Smart NFTs: Dynamic, Programmable Game Assets</h2>
+        <p class="section-subtitle">
+          Unlike traditional static NFTs, Altura's Smart NFTs allow item stats, visuals, levels, and properties 
+          to evolve dynamically based on player actions and in-game triggers without redeploying contracts.
+        </p>
+      </div>
+
+      <div class="smart-nft-sandbox glass-panel">
+        <div class="sandbox-grid">
+          <div class="sandbox-item-preview">
+            <div class="item-card-full" id="smart-nft-card">
+              <div class="item-card-badge" id="smart-rarity">EPIC</div>
+              <img src="assets/smart_nft_armor.jpg" alt="Exo-Titan Armor Smart NFT" class="smart-item-img" />
+              <div class="item-card-info">
+                <h4 id="smart-name">Exo-Titan Mech Armor</h4>
+                <div class="smart-property-bar">
+                  <div class="prop-item">
+                    <span>Defensive Shield</span>
+                    <div class="progress-bg"><div class="progress-fill" id="fill-shield" style="width: 75%;"></div></div>
+                  </div>
+                  <div class="prop-item">
+                    <span>Power Core Output</span>
+                    <div class="progress-bg"><div class="progress-fill cyan" id="fill-power" style="width: 60%;"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sandbox-controls">
+            <h3>Interactive Oracle Control Box</h3>
+            <p>Select in-game triggers to test live state shifts on the Smart NFT:</p>
+
+            <div class="control-group">
+              <label>Armor State & Overdrive:</label>
+              <div class="radio-buttons">
+                <button class="btn-option active" onclick="updateSmartNFT('base')">Standard Mode</button>
+                <button class="btn-option" onclick="updateSmartNFT('overdrive')">⚡ Overdrive Mode</button>
+                <button class="btn-option" onclick="updateSmartNFT('damaged')">💥 Damaged State</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label>In-Game Level (1 to 100):</label>
+              <input type="range" id="level-slider" min="1" max="100" value="45" oninput="updateSmartNFTLevel(this.value)" />
+              <div class="range-val">Current Level: <strong id="level-display">45</strong></div>
+            </div>
+
+            <div class="control-group">
+              <label>Smart NFT Benefits:</label>
+              <ul class="feature-bullets">
+                <li>✅ Zero gas fees required for state mutations</li>
+                <li>✅ Instant REST API and SDK triggers</li>
+                <li>✅ Fully compatible with OpenSea and Blur secondary markets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURE 2: ALTURA GUARD II -->
+  <section class="feature-section alt-bg" id="altura-guard">
+    <div class="container">
+      <div class="grid-2-col align-center">
+        
+        <div class="feature-text">
+          <span class="section-tag">FRICTIONLESS ONBOARDING</span>
+          <h2 class="section-title">Altura Guard II: Instant Web3 Authentication</h2>
+          <p>
+            Eliminate seed phrases and complex popups. Altura Guard II enables gamers to log in via 
+            Google, Apple, or Discord, creating a secure non-custodial wallet instantly. 
+            In-game transactions are confirmed with a simple 5-digit PIN passcode.
+          </p>
+
+          <div class="feature-highlights">
+            <div class="highlight-item">
+              <span class="icon">🔑</span>
+              <div>
+                <strong>Passcode Pin Confirmation</strong>
+                <p>Confirm item crafts and trades in-game using a 5-digit PIN.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon">🌐</span>
+              <div>
+                <strong>Wallet-Agnostic & Social Login</strong>
+                <p>Support both Web2 social sign-ins and external Web3 wallets like MetaMask and Phantom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Passcode Demo Card -->
+        <div class="guard-demo-card glass-panel">
+          <div class="guard-card-header">
+            <div class="logo-mini">🛡️ ALTURA GUARD II</div>
+            <div class="security-badge">SECURE ENCLAVE</div>
+          </div>
+          <div class="guard-card-body">
+            <h4>Confirm In-Game Transaction</h4>
+            <p class="tx-summary">Buy <strong>1x Legendary Healing Elixir</strong> for <strong>25 $ALU</strong></p>
+
+            <div class="passcode-box">
+              <label>Enter 5-Digit Passcode:</label>
+              <div class="pin-inputs" id="pin-container">
+                <input type="password" maxlength="1" class="pin-digit" data-index="0" />
+                <input type="password" maxlength="1" class="pin-digit" data-index="1" />
+                <input type="password" maxlength="1" class="pin-digit" data-index="2" />
+                <input type="password" maxlength="1" class="pin-digit" data-index="3" />
+                <input type="password" maxlength="1" class="pin-digit" data-index="4" />
+              </div>
+              <p class="pin-tip">Try typing any 5 numbers (e.g., 8 8 8 8 8)</p>
+            </div>
+
+            <div class="guard-status" id="guard-status-msg">
+              Waiting for PIN confirmation...
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 3: WHITE-LABEL MARKETPLACES -->
+  <section class="feature-section" id="marketplaces">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">NO-CODE MONETIZATION</span>
+        <h2 class="section-title">Launch Branded NFT Marketplaces in Minutes</h2>
+        <p class="section-subtitle">
+          Keep players inside your game's ecosystem. Create custom white-label secondary marketplaces with your own domain, 
+          branding, fee structure, and zero maintenance.
+        </p>
+      </div>
+
+      <div class="grid-3-cards">
+        <div class="card-glass feature-card">
+          <div class="card-icon">🎨</div>
+          <h3>Custom Aesthetics</h3>
+          <p>Match your game's visual identity, dark modes, typography, and custom banner artwork with ease.</p>
+        </div>
+        <div class="card-glass feature-card">
+          <div class="card-icon">💰</div>
+          <h3>Custom Royalty Split</h3>
+          <p>Collect primary sales and custom percentage secondary trading fees directly into your treasury wallet.</p>
+        </div>
+        <div class="card-glass feature-card">
+          <div class="card-icon">⚡</div>
+          <h3>Zero Gas Orders</h3>
+          <p>Off-chain order book matching with instant finality ensures smooth, low-cost trading experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE 4: CODE PLAYGROUND & DEVELOPER SDKS -->
+  <section class="feature-section alt-bg" id="developer-sdks">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">ENGINE SDKs & APIs</span>
+        <h2 class="section-title">Integrate Web3 in Lines of Code, Not Months</h2>
+        <p class="section-subtitle">
+          Native SDKs for Unity, Unreal Engine, JavaScript, and REST APIs allow developers to effortlessly 
+          mint, query, and transfer NFTs directly from your game backend.
+        </p>
+      </div>
+
+      <!-- CODE PLAYGROUND COMPONENT -->
+      <div class="code-playground glass-panel">
+        <div class="playground-header">
+          <div class="engine-tabs" id="engine-tabs">
+            <button class="tab-btn active" data-engine="unity">Unity (C#)</button>
+            <button class="tab-btn" data-engine="unreal">Unreal Engine (C++)</button>
+            <button class="tab-btn" data-engine="js">Node.js / JS</button>
+            <button class="tab-btn" data-engine="rest">REST API (cURL)</button>
+          </div>
+          <button class="btn-copy" id="btn-copy-code">Copy Code 📋</button>
+        </div>
+
+        <div class="code-editor-body">
+          <div class="code-pane">
+            <pre><code id="code-snippet-display">// Unity C# SDK Example
+using AlturaSDK;
+
+public class GameInventory : MonoBehaviour 
+{
+    async void Start() 
+    {
+        // Initialize Altura Client
+        var altura = new AlturaClient("YOUR_API_KEY");
+
+        // Mint Smart NFT to Player Wallet
+        var tx = await altura.MintItem(
+            userAddress: "0x7F9...3A19",
+            collectionId: "0x8891...",
+            itemAmount: 1
+        );
+
+        Debug.Log("NFT Minted Successfully! TX: " + tx.hash);
+    }
+}</code></pre>
+          </div>
+
+          <div class="console-pane">
+            <div class="console-top">
+              <span>SDK INTERACTIVE RUNNER</span>
+              <button class="btn-run" id="btn-run-code">Run API Request ▶</button>
+            </div>
+            <div class="console-output" id="console-output">
+              <span class="system-msg">> Click "Run API Request ▶" to test live SDK execution output...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORTED BLOCKCHAINS GRID -->
+  <section class="feature-section" id="supported-chains">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">MULTI-CHAIN ECOSYSTEM</span>
+        <h2 class="section-title">Deploy Across 17+ Leading Blockchains</h2>
+        <p class="section-subtitle">
+          Don't lock your game into a single chain. Altura supports EVM and Non-EVM networks out of the box.
+        </p>
+      </div>
+
+      <div class="chain-filters">
+        <button class="filter-chip active" onclick="filterChains('all')">All Networks (17+)</button>
+        <button class="filter-chip" onclick="filterChains('l1')">Layer 1</button>
+        <button class="filter-chip" onclick="filterChains('l2')">Layer 2</button>
+        <button class="filter-chip" onclick="filterChains('evm')">EVM Networks</button>
+      </div>
+
+      <div class="chains-grid" id="chains-grid">
+        <!-- Chain cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE GAMES SECTION -->
+  <section class="feature-section alt-bg" id="showcase">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">POWERING TOP GAMES</span>
+        <h2 class="section-title">Built with Altura Infrastructure</h2>
+        <p class="section-subtitle">
+          See how leading Web3 game studios use Altura to power item economies, marketplaces, and seamless player onboarding.
+        </p>
+      </div>
+
+      <div class="grid-2-col">
+        <div class="game-card glass-panel">
+          <div class="game-img-wrapper">
+            <img src="assets/game_showcase_1.jpg" alt="Cyber Quest Game Screenshot" class="game-img" />
+            <div class="game-tag">Cyberpunk MMORPG</div>
+          </div>
+          <div class="game-card-content">
+            <h3>Cyber Quest: Open World</h3>
+            <p>Integrated 50,000+ Smart Weapon NFTs and white-label marketplace powering $2M+ in secondary trade volume.</p>
+            <div class="game-meta">
+              <span class="meta-item">🎮 120K+ Active Players</span>
+              <span class="meta-item">⚡ Polygon Network</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card glass-panel">
+          <div class="testimonial-box">
+            <div class="quote-mark">“</div>
+            <p class="quote-text">
+              "Altura allowed our indie studio to build a multi-chain NFT weapon market in less than 3 days. 
+              The Smart NFT API and Altura Guard II saved us months of complex blockchain engineering."
+            </p>
+            <div class="quote-author">
+              <div class="author-avatar">👨‍💻</div>
+              <div>
+                <strong>Alex Vance</strong>
+                <span>Lead Architect at Vertex Gaming Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box glass-panel text-center">
+        <div class="cta-glow"></div>
+        <span class="section-tag">GET STARTED TODAY</span>
+        <h2 class="cta-title">Ready to Revolutionize Your Game with Web3?</h2>
+        <p class="cta-subtitle">
+          Join 250+ game developers building the future of digital item economies with Altura.
+        </p>
+
+        <form class="cta-form" onsubmit="handleSignup(event)">
+          <input type="email" placeholder="Enter your developer email..." required class="cta-input" id="cta-email" />
+          <button type="submit" class="btn btn-primary btn-lg glow-btn">Get Free API Key &rarr;</button>
+        </form>
+        <p class="cta-note">Instant setup • Free tier includes 10,000 monthly API calls • No credit card required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <span class="brand-name">ALTURA</span>
+          </a>
+          <p class="footer-desc">
+            The infrastructure platform for Web3 gaming. Multi-chain Smart NFTs, Altura Guard II authentication, and developer SDKs.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">Twitter / X</a>
+            <a href="#" aria-label="Discord">Discord</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Telegram">Telegram</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#smart-nfts">Smart NFTs</a></li>
+            <li><a href="#altura-guard">Altura Guard II</a></li>
+            <li><a href="#marketplaces">White-Label Marketplaces</a></li>
+            <li><a href="#developer-sdks">Multi-Chain Engine SDKs</a></li>
+            <li><a href="#token">$ALU Token Utility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="#developer-sdks">Documentation</a></li>
+            <li><a href="#developer-sdks">Unity C# SDK</a></li>
+            <li><a href="#developer-sdks">Unreal Engine 5</a></li>
+            <li><a href="#developer-sdks">REST API Reference</a></li>
+            <li><a href="#">Network Status</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog & News</a></li>
+            <li><a href="#">Careers (We're Hiring)</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Altura Technology Inc. All rights reserved. Built for Next-Gen Web3 Gaming.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
